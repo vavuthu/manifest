@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rhelpod
+  namespace: test
+spec:
+  containers:
+  - name: rhel
+    image : registry.redhat.io/rhel7
+    imagePullPolicy: Always
+    resources: {}
+    stdin: true
+
